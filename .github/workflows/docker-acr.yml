@@ -29,6 +29,6 @@ jobs:
 
       - name: Push Docker image to ACR
         run: |
-          docker tag notes-backend-diogo:latest ${{ env.ACR_LOGIN_SERVER }}/notes-backend:latest
+          docker tag notes-backend-diogo:latest ${{ env.ACR_LOGIN_SERVER }}/notes-backend-diogo:latest
           docker push ${{ env.ACR_LOGIN_SERVER }}/notes-backend-diogo:latest
 
