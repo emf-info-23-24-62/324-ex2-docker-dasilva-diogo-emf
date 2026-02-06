@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t notes-backend -f ./Dockerfile ./apps/backend
+        run: docker build -t notes-backend -f ./Dockerfile ./app
 
       - name: Login ACR
         uses: azure/docker-login@v2
