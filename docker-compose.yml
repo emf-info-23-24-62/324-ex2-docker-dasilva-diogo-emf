@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  notes-app:
+    build: .
+    container_name: mini-notes
+    ports:
+      - "3000:3000"
+    volumes:
+      - notes-data:/data
+    restart: unless-stopped
+  
+volumes:
+  notes-data:
+
